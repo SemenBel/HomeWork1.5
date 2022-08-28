@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task3();
     }
 
     public static void task1() {
@@ -55,26 +55,32 @@ public class Main {
         numbers[0] = 1;
         numbers[1] = 2;
         numbers[2] = 3;
-        for (int i = numbers.length - 1; i > 0; i--) {
-            System.out.print(numbers[i] + ", ");
+        for (int i = numbers.length - 1; i >= 0; i--) {
+                System.out.print(numbers[i]);
+                if (i > 0) {
+                    System.out.print(", ");
+                }
         }
-        System.out.print(numbers[0]);
         System.out.println();
 
         double[] doub = {1.57, 7.654, 9.986};
-        for (int i = doub.length - 1; i > 0; i--) {
-            System.out.print(doub[i] + ", ");
+        for (int i = doub.length - 1; i >= 0; i--) {
+            System.out.print(doub[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
-        System.out.print(doub[0]);
         System.out.println();
 
         long[] big = new long[2];
         big[0] = 3452335345246L;
         big[1] = 995464644245432662L;
-        for (int i = big.length - 1; i > 0; i--) {
-            System.out.print(big[i] + ", ");
+        for (int i = big.length - 1; i >= 0; i--) {
+            System.out.print(big[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
         }
-        System.out.print(big[0]);
         System.out.println();
     }
 
